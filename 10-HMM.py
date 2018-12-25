@@ -17,8 +17,6 @@ class HMM:
 		for j in range(1, len(self.state)):
 			self.all_pro[j] = (self.all_pro[j - 1] * self.trans.T).sum(axis = 1) * self.emis[:, self.state[j]]
 
-		# for k in range(len(self.all_pro)):
-		# 	print("when i = {} : ".format(k))
-		# 	print(self.all_pro[k])
+		# print(self.all_pro)
 
 		return "The final Probability is : {}".format(sum(self.all_pro[-1]))
