@@ -1,8 +1,8 @@
 class HMM:
 
 	def __init__(self, trans, emis, primary, state):
-		self.trans = trans              # transition probability
-		self.emis = emis           # emission probability
+		self.trans = trans      # transition probability
+		self.emis = emis        # emission probability
 		self.primary = primary  # primary probability
 		self.state = state      # observed state
 	
