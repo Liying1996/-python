@@ -73,12 +73,13 @@ A = array([(0.5,0.2,0.3),(0.3,0.5,0.2),(0.2,0.3,0.5)])
 B = array([(0.5,0.5),(0.4,0.6),(0.7,0.3)])
 PI = array([(0.2),(0.4),(0.4)])
 obs = ["红", "白", "红", "白"]
-Q = [1,2,3]
+Q = [1, 2, 3]
 V = ["红", "白"] 
-HMM(A ,B, PI,obs, V, Q).backward()
+HMM(A ,B, PI, obs, V, Q).backward()
 
 # 10.2  According to the 10.24 formula in P179, the result is: 
 # 0.04280618(backward) * 0.04361112(forward) / 0.0034767 = 0.53695181
  
 # 10.3
 HMM(A ,B, PI,obs, V, Q).veterbi()
+# 结果为[3, 2, 2, 2]
