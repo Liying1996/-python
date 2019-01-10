@@ -1,3 +1,5 @@
+from numpy import *
+
 class HMM:
 
     def __init__(self, A, B, PI, obs, V, Q):
